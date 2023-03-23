@@ -4,6 +4,8 @@
 
 ## Welcome! 👋
 
+[Solution](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq) | [Challenge](https://hornetos21.github.io/room-homepage-frontend-mentor/)
+
 ## The challenge
 
 Your challenge is to build out this e-commerce homepage and get it looking as close to the design as possible.
