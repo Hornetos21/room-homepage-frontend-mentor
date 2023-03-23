@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header container">
+      <nav class="nav-bar">
+        <div class="hamburger" alt="menu"></div>
+        <!-- <img class="hamburger" src="images/icon-hamburger.svg" alt="menu" /> -->
+        <img class="logo" src="images/logo.svg" alt="Logo" />
+        <ul class="menu hidden">
+          <li class="menu__item"><a href="#">Home</a></li>
+          <li class="menu__item"><a href="#">Shop</a></li>
+          <li class="menu__item"><a href="#">About</a></li>
+          <li class="menu__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="overlay container hidden"></div>
+    </header>
+    <!-- Slider -->
+    <section class="slider container flex">
+      <div class="slider__wrapper flex-grow">
+        <div class="slider__sliders">
+          <picture class="slider__slide">
+            <source
+              srcset="/images/desktop-image-hero-1.jpg"
+              media="(min-width: 425px)"
+            />
+            <img
+              class="image"
+              src="/images/mobile-image-hero-1.jpg"
+              alt="slide-1"
+            />
+          </picture>
+          <picture class="slider__slide">
+            <source
+              srcset="/images/desktop-image-hero-2.jpg"
+              media="(min-width: 425px)"
+            />
+            <img
+              class="image"
+              src="/images/mobile-image-hero-2.jpg"
+              alt="slide-2"
+            />
+          </picture>
+          <picture class="slider__slide">
+            <source
+              srcset="/images/desktop-image-hero-3.jpg"
+              media="(min-width: 425px)"
+            />
+            <img
+              class="image"
+              src="/images/mobile-image-hero-3.jpg"
+              alt="slide-2"
+            />
+          </picture>
+        </div>
+
+        <div class="buttons">
+          <div class="buttons__arrow buttons__arrow--prev">
+            <img
+              src="./images/icon-angle-left.svg"
+              data-slide="prev"
+              alt="slide to left"
+            />
+          </div>
+          <div class="buttons__arrow buttons__arrow--next">
+            <img
+              src="./images/icon-angle-right.svg"
+              data-slide="next"
+              alt="slide to right"
+            />
+          </div>
+        </div>
+      </div>
+      <section class="slider__intro text text--slider flex-grow">
+        <h1 class="title"></h1>
+        <p class="paragraph paragraph--intro"></p>
+        <a href="#"
+          >Shop now<svg
+            class="icon"
+            width="40"
+            height="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="icon--fill"
+              d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+              fill="#000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+      </section>
+    </section>
+    <!-- About -->
+    <section class="about container flex">
+      <picture class="about__image about__image--left flex-grow">
+        <img class="image" src="/images/image-about-dark.jpg" />
+      </picture>
+      <section class="about__description text text--about flex-grow">
+        <h2 class="title--about">About our furniture</h2>
+        <p class="paragraph paragraph--about">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </section>
+      <picture class="about__image about__image--right flex-grow">
+        <img class="image" src="/images/image-about-light.jpg" />
+      </picture>
+    </section>
+
+    <!-- Footer -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Hornetos21" target="_blank">Igor Shapovalov</a
+      >.
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

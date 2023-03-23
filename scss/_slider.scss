@@ -1,0 +1,52 @@
+.slider {
+  &__wrapper {
+    position: relative;
+    height: 96.2vw;
+    max-height: 53.4rem;
+  }
+  &__sliders {
+    display: flex;
+    height: 100%;
+  }
+  &__intro {
+    max-width: 60rem;
+    a {
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 1.25rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $black;
+      .icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 1.7rem;
+      }
+    }
+  }
+}
+.buttons {
+  height: 5.6vw;
+  max-height: 8rem;
+  min-height: 5.6rem;
+  width: 11.2vw;
+  max-width: 16rem;
+  min-width: 11.2rem;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: $black;
+  &__arrow {
+    background: $black;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    img {
+      height: 1.7rem;
+    }
+  }
+}

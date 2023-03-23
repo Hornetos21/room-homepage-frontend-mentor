@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+}
+.nav-bar {
+  transition: all 0.3s ease;
+  position: absolute;
+  height: 11rem;
+  display: grid;
+  justify-content: center;
+  padding-top: 4.9rem;
+  width: 100%;
+  z-index: 2;
+  &--mobile {
+    background-color: $white;
+  }
+}
+.hamburger {
+  width: 2rem;
+  height: 1.4rem;
+  background-image: url('../images/icon-hamburger.svg');
+  position: absolute;
+  left: 2.4rem;
+  top: 4.9rem;
+  &--close {
+    background: url('../images/icon-close.svg') center (center / cover)
+      no-repeat;
+  }
+}
+.logo {
+  height: 1.4rem;
+}
+.menu {
+  display: flex;
+  list-style: none;
+
+  &__item {
+    text-transform: lowercase;
+    margin-left: 3.2rem;
+    &:first-child {
+      margin-left: 8.4rem;
+    }
+    a {
+      color: $black;
+      font-size: 1.5rem;
+    }
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: $black;
+  z-index: 1;
+}
