@@ -74,9 +74,9 @@ picture {
   flex: 1 320px;
 }
 /* Header */
-@import 'header';
+@import './header';
 /* Slider */
-@import 'slider';
+@import './slider';
 /* About */
 .about {
   margin-bottom: 2rem;
@@ -96,4 +96,4 @@ picture {
   display: none;
 }
 /* Media */
-@import 'media';
+@import './media';
